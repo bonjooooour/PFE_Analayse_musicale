@@ -8,7 +8,19 @@ from os import walk
 
 fluidsynth_path = r'midi_convert\fluidsynth-2.3.4-win10-x64\bin\fluidsynth.exe'
 
-soundfont_file = 'midi_convert\Guitar.SF2' # Sound of a guitar
+# Uncomment the font you like, in the created files will be recognized by a letter, G for Guitar, P for Piano, F for flute and V for Violin
+
+soundfont_file = 'midi_convert\Guitar.SF2' 
+instrument = 'G_'
+
+# soundfont_file = 'midi_convert\Flute.sf2'
+# instrument = 'F_'
+
+# soundfont_file = 'midi_convert\Piano.sf2'
+# instrument = 'P_'
+
+# soundfont_file = 'midi_convert\String.sf2'
+# instrument = 'V_'
 
 listeFichiers = []
 for (repertoire, sousRepertoires, fichiers) in walk('chords_midi'):
@@ -16,7 +28,7 @@ for (repertoire, sousRepertoires, fichiers) in walk('chords_midi'):
 
 for file in listeFichiers:
    midi_file = "chords_midi/" + file
-   output_wav = "chords_wav/" + file.split('.')[0] + ".wav"
+   output_wav = "chords_wav/" + instrument + file.split('.')[0] + ".wav"
    command = [fluidsynth_path, '-a', 'dsound', '-o', 'audio.driver=dsound', '-i', '-l', '-s', '-g', '1.0', soundfont_file, midi_file, '-F', output_wav]
 
    try:
