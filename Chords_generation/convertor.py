@@ -6,20 +6,20 @@ To use it first start by "pip install mingus" on your env
 import subprocess
 from os import walk
 
-fluidsynth_path = r'midi_convert\fluidsynth-2.3.4-win10-x64\bin\fluidsynth.exe'
+fluidsynth_path = r'midi_utils\fluidsynth-2.3.4-win10-x64\bin\fluidsynth.exe'
 
 # Uncomment the font you like, in the created files will be recognized by a letter, G for Guitar, P for Piano, F for flute and V for Violin
 
-# soundfont_file = 'midi_convert\Guitar.SF2' 
+# soundfont_file = 'midi_utils\Guitar.SF2' 
 # instrument = 'G_'
 
-# soundfont_file = 'midi_convert\Flute.sf2'
+# soundfont_file = 'midi_utils\Flute.sf2'
 # instrument = 'F_'
 
-# soundfont_file = 'midi_convert\Piano.sf2'
+# soundfont_file = 'midi_utils\Piano.sf2'
 # instrument = 'P_'
 
-soundfont_file = 'midi_convert\RolandMarcatoStrings.sf2'
+soundfont_file = 'midi_utils\RolandMarcatoStrings.sf2'
 instrument = 'V_'
 
 
