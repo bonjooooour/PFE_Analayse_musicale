@@ -10,8 +10,8 @@ fluidsynth_path = r'midi_convert\fluidsynth-2.3.4-win10-x64\bin\fluidsynth.exe'
 
 # Uncomment the font you like, in the created files will be recognized by a letter, G for Guitar, P for Piano, F for flute and V for Violin
 
-soundfont_file = 'midi_convert\Guitar.SF2' 
-instrument = 'G_'
+# soundfont_file = 'midi_convert\Guitar.SF2' 
+# instrument = 'G_'
 
 # soundfont_file = 'midi_convert\Flute.sf2'
 # instrument = 'F_'
@@ -19,8 +19,9 @@ instrument = 'G_'
 # soundfont_file = 'midi_convert\Piano.sf2'
 # instrument = 'P_'
 
-# soundfont_file = 'midi_convert\String.sf2'
-# instrument = 'V_'
+soundfont_file = 'midi_convert\RolandMarcatoStrings.sf2'
+instrument = 'V_'
+
 
 listeFichiers = []
 for (repertoire, sousRepertoires, fichiers) in walk('chords_midi'):
