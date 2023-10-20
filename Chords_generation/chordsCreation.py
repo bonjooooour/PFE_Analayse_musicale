@@ -1,7 +1,7 @@
 # %%
 """ 
-This scripts permits the creation of all kind of chords artificialy
-To use it first start by "pip install mingus" on your env
+Transformation du fichier jupyter en python pour l'utiliser ailleurs dans
+d'autres fichiers
 """
 
 # %%
