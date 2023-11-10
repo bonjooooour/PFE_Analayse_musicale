@@ -12,7 +12,7 @@ fluidsynth_path = r"Chords_generation\\midi_utils\\fluidsynth-2.3.4-win10-x64\\b
 # soundfont_file = r"Chords_generation\midi_utils\Piano.sf2" 
 # instrument = 'P_'
 
-soundfont_file = r"Chords_generation\midi_utils\198_Legato_strings.sf2" 
+soundfont_file = r"Chords_generation\midi_utils\RolandMarcatoStrings.sf2" 
 instrument = 'V_'
 
 listeFichiers = []
