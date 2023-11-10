@@ -1,7 +1,6 @@
 ### venv ###
 # Virtualenv
 /myenv
-/midi_convert/test
 
 # Files created while working
 *.mid
