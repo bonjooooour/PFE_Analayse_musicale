@@ -15,7 +15,7 @@ for (repertoire, sousRepertoires, fichiers) in walk(midi_utils_directory):
         if fichier.lower().endswith(('.sf2', '.sf3')):
             soundfont_files.append(f"{midi_utils_directory}\\{fichier}")
             # Récupération des 6 premiers caractères du nom du fichier
-            instrument_name = fichier[:6] if len(fichier) >= 6 else fichier
+            instrument_name = fichier[:7] if len(fichier) >= 7 else fichier
             # Ajout de "_" après le nom
             instrument_name += "_"
             instruments.append(instrument_name)
@@ -25,6 +25,8 @@ print(soundfont_files[12])
 
 print("Liste des instruments:")
 print(instruments[12])
+
+
 
 
 midi_directory = "Chords_generation\\chords_midi"
