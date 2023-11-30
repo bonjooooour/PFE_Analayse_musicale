@@ -3,11 +3,11 @@ from os import walk
 
 fluidsynth_path = r"Chords_generation\\midi_utils\\fluidsynth-2.3.4-win10-x64\\bin\\fluidsynth.exe"
 
-# soundfont_file = r"Chords_generation\\midi_utils\\Guitar.SF2" 
-# instrument = 'G_'
+soundfont_file = r"Chords_generation\\midi_utils\\Guitar.SF2" 
+instrument = 'G_'
 
-soundfont_file = r"Chords_generation\\midi_utils\\Guitar_StudioPack.SF2" 
-instrument = 'G2_'
+# soundfont_file = r"Chords_generation\\midi_utils\\Guitar_StudioPack.SF2" 
+# instrument = 'G2_'
 
 # soundfont_file = r"Chords_generation\midi_utils\Flute.sf2" 
 # instrument = 'F_'
