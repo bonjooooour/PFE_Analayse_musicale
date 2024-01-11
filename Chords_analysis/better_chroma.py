@@ -2,6 +2,7 @@ import cython
 import mido
 import numpy as np
 import scipy as sp
+
 from madmom.audio.chroma import DeepChromaProcessor
 from madmom.features.chords import DeepChromaChordRecognitionProcessor
 from madmom.processors import SequentialProcessor
