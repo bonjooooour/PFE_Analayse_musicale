@@ -132,7 +132,7 @@ def create_df(dossier):
             chemin_fichier = os.path.join(dossier, fichier)
             
             # Lisez le fichier LAB et créez un DataFrame
-            df_temp = pd.read_csv(chemin_fichier, delimiter=' ', header=None, names=['start', 'end', 'chords'])
+            df_temp = pd.read_csv(chemin_fichier, delimiter="\t", header=None, names=['start', 'end', 'chords'])
             
             # Ajoutez une colonne avec le nom du fichier
             df_temp['NomFichier'] = fichier[5:-4]

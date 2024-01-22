@@ -1,9 +1,14 @@
 ### venv ###
 # Virtualenv
 /myenv
+/Chords_matthieu
+
 
 # Files created while working
 *.mid
 *.wav
+*.pkl
+*.zip
+*.pyc
 
 __pycache__
